@@ -1,0 +1,117 @@
+main {
+display: flex;
+width: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 54px;
+}
+
+
+.h1_br{
+  background-color: #FAFAFA;
+  background-image:linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+margin: 132px 0px 132px 40px;
+}
+
+/* .button_wrapper{
+padding-top: 32px;
+width: 360px;
+border-radius: 1px;
+color: #4D5064;
+} */
+.available_courses{
+    background-color: #1E1F29;
+    margin: 0 auto;
+   
+    width: 100%;
+}
+.available_courses-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.button_klik, .button_information_school{
+margin-top: 32px;    
+padding: 16px 32px 16px 32px;
+border: 1px solid #4D5064;
+color: white;
+border-radius: 10px;
+font-family: Fira Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+}
+.img{
+    width: 458px;
+    height: 258px;
+    margin-top: 111px;
+    
+}
+.button_klik {
+    background-color: #6C38CC;
+    margin-right: 32px;
+}
+
+.button_klik:hover {
+    background-color: #5c2db5;
+}
+
+
+
+
+.button_information_school {
+    background-color: transparent;
+}
+
+@media (max-width: 1080px) {
+    .available_courses-wrapper {
+display: flex;
+flex-direction:column;
+padding: 0;
+}}
+
+@media (max-width: 1080px) {
+    .button_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1080px) {
+
+
+    
+    .img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex; 
+        width: 100vw;   
+    }
+    .wrapper {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .video_school{
+        width: 90vw;
+        height:fit-content;
+        padding-right: 0px !important;
+        margin: 0 auto;
+    }
+     
+}
+
+
+
+.video_school {
+    padding-right: 40px;
+}
