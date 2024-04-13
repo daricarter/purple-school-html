@@ -61,10 +61,16 @@ color: #4D5064;
 	line-height: 22px;
 }
 
-.img {
-	width: 458px;
-	height: 258px;
+.button_information_school:hover {
+	background-color: #4d5064;
+}
+
+.img_main {
+	/* width: 458px;
+	height: 258px; */
 	margin-top: 111px;
+	width: 100%;
+	max-width: 458px;
 }
 
 .button_klik {
@@ -88,7 +94,7 @@ color: #4D5064;
 	}
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 960px) {
 	.button_wrapper {
 		display: flex;
 		justify-content: center;
@@ -98,9 +104,6 @@ color: #4D5064;
 @media (max-width: 1080px) {
 	.img {
 		margin: 0 auto;
-		margin-bottom: 20px;
-		display: flex;
-		width: 100vw;
 	}
 
 	.wrapper {
@@ -109,10 +112,10 @@ color: #4D5064;
 	}
 
 	.video_school {
-		/* width: 85vw; */
-		height: fit-content;
-		padding-right: 0px !important;
+		width: 85vw;
+
 		margin: 0 auto;
+		margin: 0px 50px 20px 60px;
 	}
 }
 
@@ -139,23 +142,41 @@ color: #4D5064;
 	}
 
 	.button_klik {
-		padding: 0px 5px 0px 30px;
+		/* padding: 0px 5px 0px 30px; */
 		text-align: center;
+	}
+	.video_school {
+		/* margin: 0 auto; */
+		margin: 0px 0px 20px 40px;
+	}
+	.img_main {
+		margin-top: 0px;
 	}
 }
 
-.video_school {
+/* .video_school {
 	padding-right: 40px;
-}
+} */
 
-/* блок полезных материалов */
+/* блок bottзных материалов */
 
 .comments {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1220px;
-	height: 2000px;
+	padding-left: 40px;
 }
+
+@media (max-width: 1250px) {
+	.comments {
+		padding-right: 40px;
+	}
+}
+/* @media (max-width: 620px) {
+	.comments {
+		margin-top: 32px;
+	}
+} */
 
 .link_comments {
 	margin-top: 100px;
@@ -163,6 +184,7 @@ color: #4D5064;
 	font-size: 18px;
 	color: #e47ad5;
 }
+
 .h1_main {
 	font-family: "Fira Sans", sans-serif;
 	font-size: 46px;
@@ -185,11 +207,22 @@ color: #4D5064;
 }
 
 .comments_materials {
+	display: flex;
 	background-color: #1e1f29;
-	width: 1218px;
-	height: 252.72px;
 	border-radius: 10px;
 	margin-top: 32px;
+	padding: 32px;
+	justify-content: space-between;
+}
+
+.materials-1 {
+	gap: 12px;
+}
+
+.icon {
+	display: flex;
+	padding-bottom: 12px;
+	gap: 32px;
 }
 
 .comments_materials-materials {
@@ -198,15 +231,23 @@ color: #4D5064;
 	padding: 0 auto;
 }
 
+@media (max-width: 860px) {
+	.comments_materials {
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
 .material-text {
 	font-family: Fira Sans;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	box-sizing: border-box;
-	width: 742px;
+	/* width: 742px; */
+	max-width: 742px;
 	color: white;
-	padding: 12px 0px 0px 32px;
+	/* padding: 12px 0px 0px 32px; */
 }
 
 .materials {
@@ -214,7 +255,7 @@ color: #4D5064;
 	gap: 32px;
 	width: 302px;
 	height: 24px;
-	padding: 34px 0px 12px 32px;
+	/* padding: 34px 0px 12px 32px; */
 }
 
 h2 {
@@ -223,19 +264,403 @@ h2 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 29px;
-	padding: 0px 0px 0px 32px;
+	/* padding: 0px 0px 0px 32px; */
+	margin-bottom: 12px;
 }
 
 .button_heading_comments {
 	color: white;
-	/* margin-left: 650px; */
 	background-color: transparent;
 	border: 1px solid #4d5064;
-	padding: 16px 32px 16px 32px;
 	border-radius: 10px;
-	width: 158px;
+	width: 159px;
 	height: 54px;
 	position: relative;
-	top: 35px;
-	right: 40px;
+
+	font-size: 18px;
+	font-family: Fira Sans;
+	font-weight: 400;
+	line-height: 21.6px;
+	text-align: center;
+	/* background-color: #6c38cc; */
+	margin-right: 24px;
+}
+
+/* .catalog {
+	background: #6c38cc;
+} */
+.curseCard__footer-button {
+	margin: 0 auto;
+}
+
+.button_heading_comments:hover {
+	background-color: #4d5064;
+}
+
+.button-and {
+	margin-top: 48px;
+	margin-bottom: 100px;
+	color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	color: white;
+	background-color: transparent;
+	border: 1px solid #4d5064;
+	border-radius: 10px;
+	font-size: 18px;
+	width: 200px;
+	height: 54px;
+	margin: 48px 0px 100px 0px;
+}
+
+.button:hover {
+	background-color: #4d5064;
+}
+
+/* каталог курсов */
+
+.catalog {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1220px;
+	padding-left: 40px;
+	/* height: 1400px; */
+}
+
+.catalog-courses {
+	overflow: scroll;
+	white-space: nowrap;
+}
+
+.catalog-courses::-webkit-scrollbar {
+	display: none;
+}
+
+.button-courses {
+	padding: 8px 16px 8px 16px;
+	border-radius: 10px;
+	border: 1px solid #4d5064;
+	background-color: transparent;
+	margin: 48px 24px 32px 0px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.button-courses:hover {
+	background-color: #4d5064;
+}
+
+.all {
+	background-color: #6c38cc;
+}
+
+.all:hover {
+	background-color: #5c2db5;
+}
+
+.curseCard {
+	/* max-width: 360px;
+	height: 486px;
+	margin: 0 auto; */
+	width: 100%;
+}
+.curseCard__header-img {
+	width: 100%;
+}
+.courses-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+	gap: 50px;
+	padding-right: 40px;
+	width: 100%;
+}
+
+.header-img {
+	width: 100%;
+}
+
+.curseCard__main {
+	background-color: #1e1f29;
+}
+.main-text {
+	padding: 24px 0px 0px 24px;
+	gap: 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.curseCard__main-h1 {
+	font-family: Fira Sans;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28.8px;
+	text-align: left;
+	color: #fafafa;
+}
+
+.p {
+	font-family: Fira Sans;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.6px;
+	text-align: left;
+	color: #afb2bf;
+	margin-top: -15px;
+}
+.lecture {
+	display: flex;
+}
+
+.lecture-p {
+	font-family: Fira Sans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+}
+
+.img {
+	gap: 8px;
+	padding-right: 2.5px;
+}
+.img-time {
+	height: 20px;
+	margin-right: 8px;
+}
+
+.main_icon {
+	gap: 30px;
+	display: flex;
+	width: Hug (65px) px;
+	height: Hug (31px) px;
+	padding-bottom: 24px;
+	gap: 10px;
+	font-family: Fira Sans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.2px;
+	text-align: center;
+	color: white;
+}
+
+.icon-time {
+	display: flex;
+	align-items: center;
+	gap: 1.5px;
+}
+
+.icon-time,
+.icon-course {
+	border: 1px solid #4d5064;
+	width: Hug (65px) px;
+	height: Hug (31px) px;
+	padding: 6px 12px 6px 12px;
+	border-radius: 17px;
+}
+
+.curseCard__footer {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	/* width: 360px; */
+	height: 102px;
+	top: 384px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #2e2d3d;
+	align-items: center;
+	/* justify-content: center; */
+	/* gap: 55px; */
+	/* margin-top: 24px; */
+}
+.curseCard__footer-price {
+	font-family: Fira Sans;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 26.4px;
+	text-align: left;
+	color: white;
+	margin-left: 24px;
+}
+
+@media (max-width: 1080px) {
+	.courses-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 50px;
+	}
+}
+
+@media (max-width: 620px) {
+	.courses-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.school-descriptions_comments {
+		height: 1500px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.courses-wrapper {
+		padding-right: 40px;
+	}
+	/* .catalog {
+		padding-right: 40px;
+		padding-right: 40px;
+	} */
+}
+.school-descriptions_comments {
+	background-color: #1e1f29;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 32px;
+	max-height: 888;
+}
+.pizdech {
+	margin: 0 auto;
+	max-width: 1220px;
+	padding-left: 40px;
+	padding-top: 36px;
+	padding-bottom: 100px;
+}
+
+.school-descriptions_container-numbers {
+	display: grid;
+	grid-template-columns: 360px 360px 360px;
+	gap: 60px;
+	margin-top: 48px;
+}
+
+.container-numbers_item {
+	background-color: #2e2d3d;
+	/* height: 188px; */
+	border-radius: 10px;
+	padding: 40px;
+	width: 100%;
+}
+
+.comment-text {
+	max-width: 787px;
+	width: 100%;
+}
+
+.item_h2 {
+	font-family: Fira Sans;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 55.2px;
+	text-align: center;
+	background: linear-gradient(
+		93.33deg,
+		#d77be6 9.26%,
+		#be63e6 42.32%,
+		#6c38cc 104.58%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.item_p {
+	font-family: Fira Sans;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.6px;
+	text-align: center;
+}
+
+h3 {
+	font-family: Fira Sans;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 43.2px;
+	text-align: left;
+	color: #fafafa;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+.school-descriptions_container-estimates {
+	display: grid;
+	grid-template-columns: 360px 360px 360px;
+	gap: 60px;
+	height: 113px;
+	padding-right: 40px;
+}
+.estimates_item {
+	display: flex;
+	background-color: #2e2d3d;
+	align-items: center;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	height: 100px;
+	height: 100px;
+	gap: 30px;
+	justify-content: center;
+}
+
+@media (max-widtx: 1080px) {
+	.estimates_item {
+		padding-right: 40px;
+	}
+}
+
+.estimates_item_img {
+	width: 100%;
+	max-width: 134px;
+	margin-right: 98px;
+}
+.udemu {
+	width: 112px;
+}
+
+.stepik {
+	width: 113px;
+	/* margin-right: 118px; */
+}
+
+.estimates_item_p {
+	font-family: Fira Sans;
+	font-size: 54px;
+	font-weight: 400;
+	line-height: 64.8px;
+	text-align: center;
+	margin-left: 24px;
+}
+@media (max-width: 1080px) {
+	.school-descriptions_container-estimates {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+	.pizdech {
+		padding-bottom: 100px;
+	}
+	.school-descriptions_container-numbers {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding-right: 40px;
+		gap: 25px;
+	}
+	.stepik,
+	.kursestop,
+	.udemu {
+		width: 100%;
+	}
+}
+
+@media (max-width: 620px) {
+	.school-descriptions_container-estimates {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding-right: 40px;
+		gap: 16px;
+	}
+	.school-descriptions_container-numbers {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }

@@ -10,14 +10,15 @@ header {
 }
 
 .header_inner {
-	max-width: calc(1220px - 48px);
+	max-width: calc(1220px - 19px);
 	display: flex;
 	margin: 0 auto;
 	width: 100%;
-	padding: 40px 40px;
+	padding-top: 40px;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	padding-left: 20px;
 }
 
 .menu {
@@ -86,10 +87,29 @@ header {
 	.menu {
 		display: none;
 	}
+
+	.login_desctop_visable {
+		display: none;
+	}
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
 	.login_desctop img {
 		margin-right: 10px;
+	}
+}
+@media (max-width: 1080px) {
+	.login_desctop {
+		margin-right: 40px;
+	}
+	.logo_company {
+		margin-left: 40px;
+	}
+	.wrapper {
+		padding-top: 40px;
+	}
+	.button_wrapper {
+		display: flex;
+		justify-content: center;
 	}
 }

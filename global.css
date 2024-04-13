@@ -5,11 +5,15 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
 	height: 100%;
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 body {
@@ -23,10 +27,14 @@ body {
 	/* max-width: 100%; */
 }
 
-a {
+a,
+p {
 	text-decoration: none;
+	color: white;
 }
-
+a:hover {
+	color: white;
+}
 li {
 	color: white;
 }
@@ -40,4 +48,8 @@ main {
 .login_desctop_visable,
 .link_wrapper {
 	color: white;
+}
+
+.a-title {
+	color: #e47ad5;
 }
